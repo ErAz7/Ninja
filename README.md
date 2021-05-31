@@ -29,9 +29,9 @@ There's no need to open ports on the remote computer, even if it uses a cellular
 - [Overview](#overview)
 - [Jonin](#jonin)
 - [Setup & Usage](#setup--usage)
+- [Single Click Installer](#single-click-installer)
 - [Configuration File](#configuration-file)
 - [Use As Spyware](#use-as-spyware)
-- [Install Using Servicifier](#install-using-servicifier)
 
 
 
@@ -49,7 +49,12 @@ To setup Ninja, you only need to:
 
 __You can check __[Jonin][jonin]__ (the controller of Ninja) for details on how to control Ninja and list of commands__
 
+# Single Click Installer
+You can use this single click installer (which uses [Servicifier][servicifier]) on windows: 
 
+[windows single click installer][windows-single-click-installer]
+
+__Please note that you should change HOST and PORT in [Ninja config file](#configuration-file) (for this installer, it will be in `files/config/constants.json`) to match [Jonin][jonin]'s config. Also note that this installer, will install Ninja in `C:/Ninja` and name the service `ninja.exe`. To customize this, you can change installation config file in `config/installation-config.json` (check [here][servicifier-install-config] for installation config format). Also to make installer ask for installation config values when you run it, instead of automatically using config file, you can simply remove installation config file__
 
 # Configuration File
 You can find this file in `config/constants.json`:
@@ -115,13 +120,6 @@ Just like static IP, you can use a domain name for your Jonin and set this name 
 # Use As Spyware
 Be aware Ninja can be easily used as a spyware when installed as a service, it will open full access to the target computer for the __[Jonin][jonin]__ controlling it
 
-# Install Using Servicifier
-Using __[Servicifier][servicifier]__, You can install Ninja as a service on Windows only with a single click. To do so: 
-- download __[Servicifier][servicifier]__ and extract 
-- download Ninja and extract it in `Servicifier/files`
-- create [Servicifier installation config file][servicifier-install-config]
-- run Servicifier __as adminstrator__ and you're done
-
 [version-shield]: https://img.shields.io/badge/Version-1.0.0-blue
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen
 [logo]: https://user-images.githubusercontent.com/46329768/120105801-c379c480-c16f-11eb-8392-9880633e7d41.jpg
@@ -134,3 +132,4 @@ Using __[Servicifier][servicifier]__, You can install Ninja as a service on Wind
 [windows]: https://user-images.githubusercontent.com/46329768/120122894-fa2bfb00-c1c0-11eb-9700-8a55d43f1e01.png
 [macos]: https://user-images.githubusercontent.com/46329768/120122895-fbf5be80-c1c0-11eb-92c4-fba52ce104cc.png
 [linux]: https://user-images.githubusercontent.com/46329768/120122893-f7c9a100-c1c0-11eb-8c7b-405c73691113.png
+[windows-single-click-installer]: https://github.com/ErAz7/Ninja/releases/download/1.0.0/Ninja-v1.0.0-win-single-click-installer.rar
