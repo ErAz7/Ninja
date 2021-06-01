@@ -31,6 +31,11 @@ There's no need to open ports on the remote computer, even if it uses a cellular
 - [Setup & Usage](#setup--usage)
 - [Single Click Installer](#single-click-installer)
 - [Configuration File](#configuration-file)
+- [Host Setup](#host-setup)
+    - [Use Dynamic DNS](#use-dynamic-dns)
+    - [Use A VPS](#use-a-vps)
+    - [Use A Static IP Address](#use-a-static-ip-address)
+    - [Use A Domain Name](#use-a-domain-name)
 - [Use As Spyware](#use-as-spyware)
 
 
@@ -43,7 +48,7 @@ Jonin is the pair for Ninja which can control (order!) multiple __Ninja__ instan
 To setup Ninja, you only need to: 
 
 - Downlaod the __[release][release]__ and extract it 
-- Change __HOST__ and __PORT__ in `config/constants.json` to match values on __[Jonin][jonin]__. Please read [This Guidance][host-setup] about how to setup HOST to never lose access to Ninja
+- Change __HOST__ and __PORT__ in `config/constants.json`. The __PORT__ config should match __[Jonin][jonin]__'s port config and __HOST__ should point to __[Jonin][jonin]__ computer. Please read [This Guide][host-setup] about how to setup HOST to never lose access to Ninja
 - You're all set. Happy spying!
 
 
@@ -54,7 +59,7 @@ You can use this single click installer (which uses [Servicifier][servicifier]) 
 
 [windows single click installer][windows-single-click-installer]
 
-__Please note that you should change HOST and PORT in [Ninja config file](#configuration-file) (for this installer, it will be in `files/config/constants.json`) to match [Jonin][jonin]'s config. Also note that this installer, will install Ninja in `C:/Ninja` and name the service `ninja.exe`. To customize this, you can change installation config file in `config/installation-config.json` (check [here][servicifier-install-config] for installation config format). Also to make installer ask for installation config values when you run it, instead of automatically using config file, you can simply remove installation config file__
+__Please note that you should still change HOST and PORT in [Ninja config file](#configuration-file) as explained in [Setup & Usage](#setup--usage) (for this installer, it will be in `files/config/constants.json`), before you use the installer. Also note that this installer, will install Ninja in `C:/Ninja` and name the service `ninja.exe`. To customize this, you can change installation config file in `config/installation-config.json` (check [here][servicifier-install-config] for installation config format). Also to make installer ask for installation config values when you run it, instead of automatically using config file, you can simply remove installation config file__
 
 # Configuration File
 You can find this file in `config/constants.json`:
@@ -63,7 +68,7 @@ You can find this file in `config/constants.json`:
 {
 	// connection port
     "PORTS": {
-        "DATA": 3704
+        "DATA": 443
     },
 
     // name to identify Ninja on Jonin when working with multiple Ninjas
@@ -106,10 +111,13 @@ You can find this file in `config/constants.json`:
 ```
 
 # Host Setup
-When configuring __[Ninja][ninja]__, you should use a __HOST__ that will always be available. So you'll have to use one of the following options:
+When configuring __[Ninja][ninja]__, you should use a __HOST__ that points to __[Jonin][jonin]__ computer and also will always be available. So you'll have to use one of the following options:
 
 ### Use Dynamic DNS
 This is the best way I can suggest since It's free and easy. you just need to create an account in one of DDNS services (like [Duck DNS][duckdns] and [No-Ip][noip]), create a domain name and set it to point to your dynamic IP address. If your ISP changed your IP, then just simply change it on DDNS website or install a Dynamic Update Client (DUC) to do this for you automatically.
+
+### Use A VPS
+You can purchase a VPS and use its IP or hostname as __HOST__ in config file. However you'll always have to control your Ninjas from this VPS. Another downside is that this is paid.
 
 ### Use A Static IP Address
 You can use an IP address for your Jonin and set this IP in __[Ninja][ninja]__'s configuration. This is not recommended since you'll have to spend money while there are easy free ways, unless you have a static IP already
