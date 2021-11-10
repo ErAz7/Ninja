@@ -1,5 +1,7 @@
-# Ninja [![version-shield]][release] [![cross-platform-shield]](#platforms)
-> A general-purpose fully customizable software to control a remote computer behind any NAT, Firewall and proxy. Providing secure shell access, file transfer and shell stream (stream shell output from remote to a local file)
+# Ninja [![version-shield]][release]
+> A general-purpose fully customizable software to control a remote computer behind any NAT, Firewall and proxy. Providing secure shell access, file transfer and shell stream (stream shell output from remote to a local file). Ninja has no prerequisites, you can just [download the release][release] and use it right away!
+
+__Please note that Ninja is the host; So it will be running on target (remote) computer. You would need [Jonin][jonin] on controller (commander) computer to connect to your Ninjas and command them__
 
 ![logo]
 
@@ -16,7 +18,7 @@ You can download latest release from [here][release]
 
 ![windows] | ![macos] | ![linux] |
 --- | --- | --- |
-Tested on Windows 10 ✔ | Not tested but should work | Not tested but should work |
+Windows 10 ✔ | In Progress ⌛ | In Progress ⌛ |
 
 # Overview
 
@@ -130,14 +132,14 @@ Be aware Ninja can be easily used as a spyware when installed as a service, it w
 
 [version-shield]: https://img.shields.io/badge/Version-1.0.0-blue
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen
-[logo]: https://user-images.githubusercontent.com/46329768/120105801-c379c480-c16f-11eb-8392-9880633e7d41.jpg
+[logo]: https://user-images.githubusercontent.com/46329768/120117984-597c1200-c1a5-11eb-8190-2dac8b7cbe8d.jpg
 [ninja]: https://github.com/ErAz7/Ninja
 [jonin]: https://github.com/ErAz7/Jonin
 [servicifier]: https://github.com/ErAz7/servicifier
 [servicifier-install-config]: https://github.com/ErAz7/servicifier#installation-config
 [release]: https://github.com/ErAz7/Ninja/releases
 [host-setup]: #host-setup
-[windows]: https://user-images.githubusercontent.com/46329768/120122894-fa2bfb00-c1c0-11eb-9700-8a55d43f1e01.png
-[macos]: https://user-images.githubusercontent.com/46329768/120122895-fbf5be80-c1c0-11eb-92c4-fba52ce104cc.png
-[linux]: https://user-images.githubusercontent.com/46329768/120122893-f7c9a100-c1c0-11eb-8c7b-405c73691113.png
+[windows]: https://user-images.githubusercontent.com/46329768/141021000-3fe223be-f648-4aaf-8a2a-3a5d84f95d50.png
+[macos]: https://user-images.githubusercontent.com/46329768/141021007-c2075401-e0e0-4451-8668-77da557bbe9b.png
+[linux]: https://user-images.githubusercontent.com/46329768/141096642-40524479-cc30-42e3-8a8e-c76c5c9b3f50.png
 [windows-single-click-installer]: https://github.com/ErAz7/Ninja/releases/download/1.0.0/Ninja-v1.0.0-win-single-click-installer.rar
