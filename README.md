@@ -133,7 +133,7 @@ Be aware Ninja can be easily used as a spyware when installed as a service, it w
 # Source Code
 Source code will be open soon, after some refactoring and improvements
 
-[version-shield]: https://img.shields.io/badge/Version-1.0.0-blue
+[version-shield]: https://img.shields.io/badge/Version-1.0.1-blue
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen
 [logo]: https://user-images.githubusercontent.com/46329768/120117984-597c1200-c1a5-11eb-8190-2dac8b7cbe8d.jpg
 [ninja]: https://github.com/ErAz7/Ninja
