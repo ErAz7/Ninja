@@ -70,7 +70,7 @@ You can find this file in `config/constants.json`:
 {
 	// connection port
     "PORTS": {
-        "DATA": 443
+        "DATA": 3707
     },
 
     // name to identify Ninja on Jonin when working with multiple Ninjas
@@ -129,6 +129,9 @@ Just like static IP, you can use a domain name for your Jonin and set this name 
 
 # Use As Spyware
 Be aware Ninja can be easily used as a spyware when installed as a service, it will open full access to the target computer for the __[Jonin][jonin]__ controlling it
+
+# Source Code
+Source code will be open soon, after some refactoring and improvements
 
 [version-shield]: https://img.shields.io/badge/Version-1.0.0-blue
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen
