@@ -1,7 +1,7 @@
 # Ninja [![version-shield]][release]
 > A general-purpose fully customizable software to control a remote computer behind any NAT, Firewall and proxy. Providing secure shell access, file transfer and shell stream (stream shell output from remote to a local file). Ninja has no prerequisites, you can just [download the release][release] and use it right away!
 
-__Please note that Ninja is the host; So it will be running on target (remote) computer. You would need [Jonin][jonin] on controller (commander) computer to connect to your Ninjas and command them__
+__Please note that Ninja is the host and executor of commands; So it will be running on target (remote) computer. You would need [Jonin][jonin] on controller (commander) computer to connect to your Ninjas and command them__
 
 ![logo]
 
@@ -51,8 +51,9 @@ To setup Ninja, you only need to:
 
 - Downlaod the __[release][release]__ and extract it 
 - Change __HOST__ and __PORT__ in `config/constants.json`. The __PORT__ config should match __[Jonin][jonin]__'s port config and __HOST__ should point to __[Jonin][jonin]__ computer. Please read [This Guide][host-setup] about how to setup HOST to never lose access to Ninja
-- You're all set. Happy spying!
+- All set!
 
+__*Important*: `NO_LOG` in config file SHOULD be set to `true` when you want to use Ninja as a service, othervise, the log file might grow larger forever (or up to the limit)__
 
 __You can check __[Jonin][jonin]__ (the controller of Ninja) for details on how to control Ninja and list of commands__
 
@@ -68,13 +69,13 @@ You can find this file in `config/constants.json`:
 
 ```jsonc
 {
-	// connection port
+    // connection port
     "PORTS": {
         "DATA": 3707
     },
 
     // name to identify Ninja on Jonin when working with multiple Ninjas
-    "NAME": "Ninja Name",
+    "NAME": "Ninja's Name",
 
     // Jonin computer's address
     "HOST": "domain.com", 
@@ -93,12 +94,13 @@ You can find this file in `config/constants.json`:
         "ACK_INTERVAL": 2000
     },
 
-    // stop logging, this SHOULD BE true when using as a sevice to prevent 
-    // logs file growing forever 
+    // stop logging, this SHOULD be set to true when you want to use Ninja 
+    // as a service; othervise, the log file might grow larger forever 
+    // (or up to the limit)
     "NO_LOG": false,
 
     "PROGRESS_BAR": {
-    	// progress bar colors 
+        // progress bar colors 
         "COLOR_MAP": {
             "FAILED": ["red", "red"],
             "INVALID": ["red", "red"],
@@ -128,7 +130,7 @@ You can use an IP address for your Jonin and set this IP in __[Ninja][ninja]__'s
 Just like static IP, you can use a domain name for your Jonin and set this name in __[Ninja][ninja]__'s configuration. For same reason as static IP, this also is not a recommended way
 
 # Use As Spyware
-Be aware Ninja can be easily used as a spyware when installed as a service, it will open full access to the target computer for the __[Jonin][jonin]__ controlling it
+Please note that Ninja can be easily used as a spyware when installed as a service, it will open full access to the target computer for the __[Jonin][jonin]__ controlling it
 
 # Source Code
 Source code will be open soon, after some refactoring and improvements
