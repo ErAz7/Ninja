@@ -14,6 +14,9 @@ You can download latest release from [here][release]
 - File upload/download (Multiple files at once) to/from remote ([Ninja][ninja])
 - Shell stream, run command on remote ([Ninja][ninja]) and stream output to a file on local ([Jonin][jonin])
 
+# Demo
+https://user-images.githubusercontent.com/46329768/141596530-56ef1ba9-3c91-4ad6-8975-8f38812d1db1.mp4
+
 # Platforms
 
 ![windows] | ![macos] | ![linux] |
