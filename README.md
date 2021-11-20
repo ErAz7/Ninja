@@ -147,6 +147,8 @@ Source code will be open soon, after some refactoring and improvements
 [servicifier-install-config]: https://github.com/ErAz7/servicifier#installation-config
 [release]: https://github.com/ErAz7/Ninja/releases
 [host-setup]: #host-setup
+[noip]: https://www.noip.com
+[duckdns]: https://www.duckdns.org
 [windows]: https://user-images.githubusercontent.com/46329768/141021000-3fe223be-f648-4aaf-8a2a-3a5d84f95d50.png
 [macos]: https://user-images.githubusercontent.com/46329768/141021007-c2075401-e0e0-4451-8668-77da557bbe9b.png
 [linux]: https://user-images.githubusercontent.com/46329768/141096642-40524479-cc30-42e3-8a8e-c76c5c9b3f50.png
