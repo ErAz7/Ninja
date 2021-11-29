@@ -1,4 +1,4 @@
-# Ninja [![version-shield]][release]
+# Ninja [![version-shield]][release] [![cross-platform-shield]](#platforms)
 > A general-purpose fully customizable software to control a remote computer behind any NAT, Firewall and proxy. Providing secure shell access, file transfer and shell stream (stream shell output from remote to a local file). Ninja has no prerequisites, you can just [download the release][release] and use it right away!
 
 __Please note that Ninja is the host and executor of commands; So it will be running on target (remote) computer. You would need [Jonin][jonin] on controller (commander) computer to connect to your Ninjas and command them__
@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/46329768/141596530-56ef1ba9-3c91-4ad6-
 
 ![windows] | ![macos] | ![linux] |
 --- | --- | --- |
-Windows 10 ✔ | In Progress ⌛ | In Progress ⌛ |
+Windows 10 ✔ | macOS 12 Monterey ✔ | Parrot OS 4.11.2 ✔ |
 
 # Overview
 
@@ -138,7 +138,7 @@ Please note that Ninja can be easily used as a spyware when installed as a servi
 # Source Code
 Source code will be open soon, after some refactoring and improvements
 
-[version-shield]: https://img.shields.io/badge/Version-1.0.1-blue
+[version-shield]: https://img.shields.io/badge/Version-1.1.0-blue
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen
 [logo]: https://user-images.githubusercontent.com/46329768/120117984-597c1200-c1a5-11eb-8190-2dac8b7cbe8d.jpg
 [ninja]: https://github.com/ErAz7/Ninja
