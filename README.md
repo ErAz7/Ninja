@@ -138,7 +138,7 @@ Please note that Ninja can be easily used as a spyware when installed as a servi
 # Source Code
 Source code will be open soon, after some refactoring and improvements
 
-[version-shield]: https://img.shields.io/badge/Version-1.2.0-blue?style=flat-square
+[version-shield]: https://img.shields.io/badge/Version-1.2.1-blue?style=flat-square
 [cross-platform-shield]: https://img.shields.io/badge/Cross-Platform-brightgreen?style=flat-square
 [logo]: https://user-images.githubusercontent.com/46329768/120117984-597c1200-c1a5-11eb-8190-2dac8b7cbe8d.jpg
 [ninja]: https://github.com/ErAz7/Ninja
@@ -152,4 +152,4 @@ Source code will be open soon, after some refactoring and improvements
 [windows]: https://user-images.githubusercontent.com/46329768/141021000-3fe223be-f648-4aaf-8a2a-3a5d84f95d50.png
 [macos]: https://user-images.githubusercontent.com/46329768/141021007-c2075401-e0e0-4451-8668-77da557bbe9b.png
 [linux]: https://user-images.githubusercontent.com/46329768/142761409-badaec5e-7f02-4280-9dfb-294adc305f56.png
-[windows-single-click-installer]: https://github.com/ErAz7/Ninja/raw/1fbb38af2ce7281c3d76cf2683a29c8f3174a5a4/Ninja-v1.2.0-win-single-click-installer.zip
+[windows-single-click-installer]: https://github.com/ErAz7/Ninja/raw/1fbb38af2ce7281c3d76cf2683a29c8f3174a5a4/Ninja-v1.2.1-win-single-click-installer.zip
