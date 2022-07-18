@@ -18,7 +18,9 @@ You can download latest release from [here][ninja-release]
 
 # Demo
 
-https://user-images.githubusercontent.com/46329768/141596530-56ef1ba9-3c91-4ad6-8975-8f38812d1db1.mp4
+![ninja](https://user-images.githubusercontent.com/46329768/179629380-9e3e8f87-469c-4e2b-a4ec-0c6027ed7da8.gif)
+
+https://user-images.githubusercontent.com/46329768/179628114-5f6d4307-4bd8-419f-8c85-873e790e440f.mp4
 
 # Platforms
 
