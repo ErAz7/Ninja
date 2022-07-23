@@ -63,7 +63,7 @@ Follow these steps to setup Jonin and Ninja:
 
 **For usage guide and list of commands, [check here][jonin-usage]**
 
-**Note: If you did all above and got `no ninja`, then the chances are your ISP is putting you behind a NAT. You can check and if so, ask them to change your NAT type to `OPEN` to fix this**
+**Note: If you did all above and got `no ninja`, then the chances are your ISP is putting you behind a NAT. To check this, you can find your router's WAN IP address (can be found on router's homepage) and then compare it to the actual IP address that you have on the internet (can be found by searching `my ip` on google); If these IP addresses were NOT identical, then your router is behind a NAT. To fix this, you should ask your ISP to change your NAT type to `OPEN`**
 
 **_Note_: `NO_LOG` in config file SHOULD be set to `true` when you want to use Ninja as a service, otherwise, the log file might grow larger forever (up to the limit)**
 
@@ -163,7 +163,6 @@ Source code will be open soon, after some refactoring and improvements
 [ninja-release]: https://github.com/ErAz7/Ninja/releases
 [jonin-release]: https://github.com/ErAz7/Jonin/releases
 [host-setup]: #host-setup
-[jonin-setup]: https://github.com/ErAz7/Jonin#setup
 [jonin-usage]: https://github.com/ErAz7/Jonin#usage
 [noip]: https://www.noip.com
 [duckdns]: https://www.duckdns.org
